@@ -1,224 +1,256 @@
- /* comment in css */
- *{
-    overflow: auto;
-}
- body{
-    background-color: #8BA1BB;
-    font-family: Arial;
-}
-p.category{
-    background-color: #000000;
-    color:azure;
-    display: inline-block;
-    margin-top: -15px;
-    margin-bottom: 0px;
-    padding: 8px 20px;
-    font-weight: bold;
-    font-size: 16px;
-}
-div.category{
-    text-align: center;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    overflow: visible;
-}
-div.content{
-    background-color: antiquewhite;
-    margin: 40px 8px 40px 8px;
-    padding: 0px 8px 30px 8px; 
-    /*min-width: 350px;*/
-    box-shadow: 0px 0px 8px 8px#20202060 ;
-    overflow: visible;
 
-    
-}
-h1{
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-div.line{
-    background-color: #000000;
-    height: 1px;
-    max-width: 100px;
-    margin-left:auto ;
-    margin-right: auto;
-
-}
-p.discription{
-    text-align: center;
-    max-width: 400px;
-    display: inline-block;
-    font-size: 14px;
-}
-div.discription{
-    text-align: center;
-    
-    
-}
-
-img.image{
-    text-align: center;
-    width: 100%
-}
-table.table{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: azure;
-    background-color:#6C829Dc0 ;
-    height: 20px;
-}
-
-div.order{
-    position: relative;
-    background-color: rgb(255, 255, 255);
-
-}
-
-table.table td {
-    text-align: center;
-    vertical-align: top;
-    font-size: 12px;
-    
-}
-table.table th {
-    vertical-align: bottom;
-    padding-bottom: 8px;
-    font-size: 12px;
-    
-}
-
-img.info{
-    display: block;
-    max-height: 400px;
-    object-fit: cover;
-    min-height: 200px;
-    background-color: grey;
-}
-div.col{
-    width: 100%;
-    margin-top: 20px;
-}
-
-div.col h2{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 15px;
-    border-bottom: 5px solid #6c829d;
-    padding-bottom: 5px;
-
-}
-
-div.col1{
-    display: inline-block;
-    /*margin-right: 10%;*/
-
-}
-
-div.col2{
-    /*float: right;*/
-
-
-}
-
-div.ingredients p{
-    text-align: center;
-    font-size: 14px;
-    border: 1px solid rgb(129, 128, 128);
-    padding: 8px 0px;
-    margin-top: 4px;
-    margin-bottom: 0px;
-    
-}
-
-table.instructions p{
-    background-color: #6c829d;
-    color: azure;
-    font-size: 14px;
-    font-weight: bold;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    padding-top: 4px;
+*{
     box-sizing: border-box;
-    border-radius: 50%;
+}
+
+:root{
+    --color1:#ff4718;
+    --color2:#acacacf4;
+
+}
+
+
+body{
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+div.cover{
+    background: url(cover_overlay.png) no-repeat center/100% 100% ,url(cover.jpg) no-repeat center/cover ;
+    height: 360px;
+    position: relative;
+    
+}
+
+
+img.cover-profile{
+    height: 100px;
+    position: relative;
+    left: 50%;
+    margin-left: -75px;
+    margin-bottom: 5px;
+    margin-top: 50px;
+    
 
 }
 
-table.instructions td.ins{
+h1{
+    color: white;
+    text-align: center;
+    font-size: 42px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+div.cover p{
+    color: antiquewhite;
+    text-align: center;
     font-size: 14px;
+    margin-top: 8px;
+}
+
+div.cover_contact{
+    background-color: #ff000000;
+    position: absolute;
+    top:20px;
+    left: 10px;
+    border-left: 4px solid var(--color1);
     padding-left: 10px;
-    padding-bottom: 10px;
+}
+
+div.cover_contact a{
+    display: block;
+    margin-top: 0px;
+    color:azure;
+    font-size: 14px;
+}
+div.cover_contact a:first-child{
+    margin-bottom: 10px;
+}
+
+
+
+
+div.contact{
+    margin-top: 30px;
+    text-align: center;
+}
+
+a.contactme{
+    background-color: rgb(0, 0, 0 , 0.5);
+    display: inline;
+    padding: 8px 20px;
+    border: 3px solid var(--color1);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a.contactme:hover{
+    color: rgb(255, 255, 255);
+    border: 3px solid #ffffff;
 
 }
 
-table.instructions td{
-    vertical-align: top;
+div.section{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+div.saprator{
+    background-color: #979797;
+    height: 3px;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    margin-left: -25%;
+
+
 }
 
-table.instructions tr{
-    height: 40px;
+div.grey-section-1 {
+    background: url(triangle2white.svg) no-repeat center bottom/100%;
+    background-color: var(--color2);
 
-}
-
-/* desktop*/
-@media only screen and (min-width: 768px) {
-    div.content{
-        margin: 60px 10% 80px 10%;
-        padding: 0px 30px 30px 30px; 
-        min-width: 350px;
+    padding-bottom: 70px;
+    text-align: center;
     
-        
-    }
-    table.table{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        color: azure;
-        background-color:#6C829Dc0 ;
+}
+
+div.grey-section-1 p{
+    font-size: 22px;
+    color:#444343;
+    text-align: center;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+div.grey-section-2 {
+    background: url(triangle1white.svg) no-repeat center top/100%;
+    background-color: var(--color2);
+
+    padding-top: 100px;
+    text-align: center;
+    
+}
+h2{
+    text-align: center;
+    font-size: 34px;
+    margin-top: 0px;
+}
+
+.col40{
+    width: 40%;
+
+    
+    
+}
+
+.col60{
+    width: 60%;
+    margin-top: 10px;
+    text-align: left;
+    
+}
+
+.floatr{
+    float: right;
+}
+
+div.text-width-vertical-line{
+    border-left: 4px solid var(--color1);
+    padding-left: 8px;
+}
+
+div.text-width-vertical-line p {
+    margin-top: 0px;
+}
+
+div.verticalbar{
+    height: 50px;
+    width: 4px;
+    background-color: var(--color1);
+    margin-right: 8px;
+}
+
+div.frame {
+    margin: 30px 50px;
+    padding: 20px 30px;
+    background-color: white;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/*portfolio*/
+.portfolio-header{
+    height: 90px;
+    background: url(cover.jpg) no-repeat center/cover ;
+    position: relative;
+}
+
+.portfolio-header-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 4px;
+    padding-left: 8px;
+}
+
+/*responsive design mobile*/
+@media only screen and (max-width: 768px) {
+   
+    img.cover-profile{
         height: 80px;
-    }
-    table.table td {
-        text-align: center;
-        vertical-align: top;
-        font-size: 14px;
-        
-    }
-    table.table th {
-        vertical-align: bottom;
-        padding-bottom: 8px;
-        font-size: 14px;
-        
-    }
-
-    div.col{
-        width: 45%;
-        margin-top: 20px;
-    }
-    
-    
-    div.col1{
-        margin-right: 10%;
-    
-    }
-    
-    div.col2{
-        float: right;
-    
-    
-    }
-    
+        margin-top: 75px;
   }
+  h1{
+    text-align: center;
+    font-size: 38px;
+    margin-top: 5px;
+    
+}
+
+div.cover p{
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+div.section{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+div.grey-section-1 {
+    text-align: center;
+    padding-bottom: 40px;
+    
 
 
-/* very large screen*/
-  @media only screen and (min-width: 900px) {
-    div.content{
-        margin-left: auto;
-        margin-right: auto;
-        width: 650px;
-    }
+}
+h2{
+    font-size: 30px;
+}
+.col40{
+    width: 100%;
 
-  }
+    
+    
+}
+
+.col60{
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+    
+}
+
+div.frame {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    background-color: white;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+}
